@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".menu_act">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="407dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ViewFlipper>
+
+    <TableLayout
+        android:layout_width="408dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="218dp"
+                    android:layout_height="91dp"
+                    android:onClick="clientes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/perfil_men" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="106dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="GESTIONAR USUARIOS"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton1"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton1" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="190dp"
+                    android:layout_height="89dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/bd_men" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="108dp"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="GESTIONAR INSUMOS"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.513"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="218dp"
+                    android:layout_height="80dp"
+                    android:onClick="localizacion"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/maps_men" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="93dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="LOCALIZACION"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                    app:layout_constraintHorizontal_bias="0.544"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton3" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="198dp"
+                    android:layout_height="79dp"
+                    android:onClick="info"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/info_men" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="INFORMACION"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.528"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
