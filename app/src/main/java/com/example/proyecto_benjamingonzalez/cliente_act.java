@@ -47,20 +47,31 @@ public class cliente_act extends AppCompatActivity {
             String planes= sp2.getSelectedItem().toString();
 
             int saldo= Integer.parseInt(texto.getText().toString());
-            int xtreme= Integer.parseInt(plan.getXtreme());
-            int mindfullness=Integer.parseInt(plan.getMindfullness());
-            int resultado=saldo-xtreme;
-            int resultadodos=saldo-mindfullness;
+            int plus = Integer.parseInt(plan.getPlus());
+            int plusultra=Integer.parseInt(plan.getPlusUltra());
+            int resultado=saldo-plus;
+            int resultadodos=saldo-plusultra;
 
-            if(cliente.equals("Roberto")&&planes.equals("xtreme"))
+            if(cliente.equals("Roberto")&&planes.equals("Plus"))
             {
-                mensaje.setText("El valor de xtreme es: "+resultado);
+                mensaje.setText("El valor del plan Plus es: "+resultado);
             }
 
-            if(cliente.equals("Roberto")&&planes.equals("mindullness"))
+            if(cliente.equals("Roberto")&&planes.equals("Plus Ultra"));
             {
-                mensaje.setText("El valor de xtreme es: "+resultadodos);
+                mensaje.setText("El valor del plan Plus Ultra es: "+resultadodos);
             }
+
+            if(cliente.equals("Ivan")&&planes.equals("Plus"))
+            {
+                mensaje.setText("El valor del plan Plus es: "+resultado);
+            }
+
+            if(cliente.equals("Ivan")&&planes.equals("Plus Ultra"));
+            {
+                mensaje.setText("El valor del plan Plus Ultra es: "+resultadodos);
+            }
+
 
         }
 
