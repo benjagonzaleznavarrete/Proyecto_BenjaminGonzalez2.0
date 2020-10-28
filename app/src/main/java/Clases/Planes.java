@@ -1,22 +1,22 @@
 package Clases;
 
 public class Planes {
-    private String xtreme;
-    private String mindfullness;
+    private String plus;
+    private String plusUltra;
 
     public Planes()
     {
-        xtreme="12000";
-        mindfullness="24000";
+        plus="12000";
+        plusUltra="24000";
     }
 
-    public String getXtreme()
+    public String getPlus()
     {
-        return xtreme;
+        return plus;
     }
 
-    public String getMindfullness()
+    public String getPlusUltra()
     {
-        return mindfullness;
+        return plusUltra;
     }
 }

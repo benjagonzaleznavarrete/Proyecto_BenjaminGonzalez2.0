@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class menu_act extends AppCompatActivity {
 
     private ViewFlipper vf;
-    private int[] images={R.drawable.a, R.drawable.b, R.drawable.c};
+    private int[] images={R.drawable.auno, R.drawable.bdos, R.drawable.ctres};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +52,13 @@ public class menu_act extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void insumos(View v)
+    {
+        Intent i = new Intent(this, insumos.class);
+        startActivity(i);
+    }
+
+
     public void clientes(View v)
     {
         ArrayList<String> clientes=new ArrayList<String>();
@@ -59,8 +66,8 @@ public class menu_act extends AppCompatActivity {
         clientes.add("Roberto");
         clientes.add("Ivan");
 
-        planes.add("Xtreme");
-        planes.add("Mindfullness");
+        planes.add("Plus");
+        planes.add("Plus Ultra");
 
         Intent i= new Intent(this, cliente_act.class);
         i.putExtra("listaclientes",clientes);

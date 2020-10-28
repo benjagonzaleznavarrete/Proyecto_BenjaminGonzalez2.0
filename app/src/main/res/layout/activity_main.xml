@@ -15,29 +15,13 @@
         android:layout_marginLeft="74dp"
         android:layout_marginEnd="51dp"
         android:layout_marginRight="51dp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginBottom="52dp"
         android:textColor="#F40707"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginLeft="94dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginRight="107dp"
-        android:layout_marginBottom="38dp"
-        android:ems="10"
-        android:hint="Ingrese password"
-        android:inputType="textPersonName"
-        android:password="true"
-        app:layout_constraintBottom_toTopOf="@+id/biniciar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -46,57 +30,73 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginRight="163dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="76dp"
         android:text="INICIAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/errormessage"
+        app:layout_constraintEnd_toStartOf="@+id/barraprogreso"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginLeft="94dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginRight="107dp"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:hint="Ingrese Nombre"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/pass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="320dp"
-        android:layout_height="210dp"
+        android:layout_width="304dp"
+        android:layout_height="186dp"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="55dp"
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logotipo" />
 
     <ProgressBar
         android:id="@+id/barraprogreso"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toTopOf="@+id/errormessage"
-        app:layout_constraintStart_toEndOf="@+id/biniciar"
-        app:layout_constraintTop_toBottomOf="@+id/pass"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="303dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese password"
+            android:inputType="textPersonName"
+            android:password="true" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
